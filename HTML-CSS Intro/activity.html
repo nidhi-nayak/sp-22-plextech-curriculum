@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="description" content="Free Web tutorials for HTML and CSS">
-        <meta name="author" content="John Doe">
-        <title>A Meaningful Page Title</title>
+        <meta name="description" content="A website to learn all about me, Nidhi Nayak!">
+        <meta name="author" content="Nidhi Nayak">
+        <link rel="icon" type="image/x-icon" href="./heart.jpg"> 
+        <title>All About Nids</title>
+        <link rel="stylesheet" href="style.css"> 
     </head>
-    <body>
+    <body id = "page">
+        <button onclick="dark_mode()">Dark Mode!</button>
+        <script>
+            function dark_mode() {
+            page.style.backgroundColor="black";
+            var header1 = document.getElementById("header")
+            var main1 = document.getElementById("main")
+            var footer1 = document.getElementById("footer")
+            var navbar1 = document.getElementById("navbar")
+            header1.style.backgroundColor="rgb(82,3,91)"
+            header1.style.color = "rgb(252,109,0)"
+            navbar1.style.backgroundColor="rgb(2, 141, 71)"
+            navbar1.style.color = "rgb(17,17,115)"
+            main1.style.backgroundColor = "rgb(7, 83, 88)"
+            footer1.style.backgroundColor = "rgb(255, 156, 7)"
+            footer1.style.color = "rgb(77, 11, 97)"
+            }
+        </script>
+        <button onclick="light_mode()">Light Mode!</button>
+        <script>
+            function light_mode() {
+            page.style.backgroundColor="white";
+            var header1 = document.getElementById("header")
+            var main1 = document.getElementById("main")
+            var footer1 = document.getElementById("footer")
+            var navbar1 = document.getElementById("navbar")
+            header1.style.backgroundColor="rgb(156, 144, 228)"
+            header1.style.color = "rgb(255, 166, 0)"
+            navbar1.style.backgroundColor="rgb(163, 230, 157)"
+            navbar1.style.color = "royalblue"
+            main1.style.backgroundColor = "rgb(92, 189, 228)"
+            footer1.style.backgroundColor = "rgb(252, 215, 147)"
+            footer1.style.color = "rgb(140, 0, 255)"
+            }
+        </script>
+        <h1 id="header" style="color:rgb(255, 166, 0);text-align:center; background-color: rgb(156, 144, 228)">Things That I Love</h1>
+        <h2 id="navbar" style="background-color: rgb(163, 230, 157);color:royalblue;text-align:center">
+            <div class="side ">
+                <a href="#">Nicknames</a>
+                <a href="#">Favorite Foods</a>
+                <a href="#">Pictures</a>
+                <a href="#">Hobbies</a>
+            </div>
+        </h2>
+        <main id = "main" style="background-color: rgb(92, 189, 228);">
+            <img style="width: 700px; height: 500px; margin: 50px 50px 50px 50px;" src="WaterPolo.jpg" alt="my sport">
+            <img>
+            <img> 
+            <img>
+        </main>
+        <footer>
+            <p id = "footer" style="background-color:rgb(252, 215, 147); color:rgb(140, 0, 255); text-align:right" >THIS IS MY FOOTER! Author: Nidhi Nayak</p>
+        <footer>
     </body>
 </html>
